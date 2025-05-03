@@ -2,19 +2,23 @@ import React from 'react';
 
 const Diagnostics: React.FC = () => {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Advanced Diagnostics</h2>
-          <p className="text-lg text-gray-600 mb-8">
-            Access state-of-the-art diagnostic tools and services to better understand your health. Our platform provides comprehensive analysis and insights to help you make informed healthcare decisions.
-          </p>
-          <a
-            href="/diagnostics"
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
-          >
-            Learn More
-          </a>
+    <section id="diagnostics" className="diagnostics">
+      <h2>Diagnostic Tools</h2>
+      <div className="diagnostics-content">
+        <div className="tool-card">
+          <h3>Symptom Checker</h3>
+          <p>Input your symptoms to get potential diagnoses</p>
+          <button className="tool-button">Try Symptom Checker</button>
+        </div>
+        <div className="tool-card">
+          <h3>Lab Results Analyzer</h3>
+          <p>Understand your medical test results</p>
+          <button className="tool-button">Analyze Results</button>
+        </div>
+        <div className="tool-card">
+          <h3>Medication Checker</h3>
+          <p>Check drug interactions and side effects</p>
+          <button className="tool-button">Check Medications</button>
         </div>
       </div>
     </section>

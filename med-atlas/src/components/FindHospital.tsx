@@ -2,19 +2,26 @@ import React from 'react';
 
 const FindHospital: React.FC = () => {
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Find Hospitals Near You</h2>
-          <p className="text-lg text-gray-600 mb-8">
-            Quickly locate hospitals and healthcare facilities in your area. Our comprehensive database helps you find the right medical care when you need it most, with detailed information about services and specialties.
-          </p>
-          <a
-            href="/find-hospital"
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
-          >
-            Find Now
-          </a>
+    <section id="find-hospital" className="find-hospital">
+      <h2>Find a Hospital</h2>
+      <div className="hospital-finder">
+        <div className="search-container">
+          <input type="text" placeholder="Enter your location" />
+          <select>
+            <option value="">Select specialty</option>
+            <option value="general">General Hospital</option>
+            <option value="specialty">Specialty Clinic</option>
+            <option value="emergency">Emergency Care</option>
+          </select>
+          <button>Search</button>
+        </div>
+        <div className="hospital-results">
+          <div className="hospital-card">
+            <h3>City General Hospital</h3>
+            <p>123 Medical Center Drive</p>
+            <p>Emergency Services Available</p>
+            <a href="#" className="view-details">View Details</a>
+          </div>
         </div>
       </div>
     </section>

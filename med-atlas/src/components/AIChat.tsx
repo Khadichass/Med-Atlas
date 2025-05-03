@@ -2,19 +2,31 @@ import React from 'react';
 
 const AIChat: React.FC = () => {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">AI Healthcare Assistant</h2>
-          <p className="text-lg text-gray-600 mb-8">
-            Get instant answers to your health-related questions with our AI-powered chatbot. Our intelligent assistant provides reliable information and guidance, available 24/7 to support your healthcare needs.
-          </p>
-          <a
-            href="/ai-chat"
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
-          >
-            Go to Chat
-          </a>
+    <section id="ai-chat" className="ai-chat">
+      <h2>AI Medical Assistant</h2>
+      <div className="ai-chat-content">
+        <div className="ai-features">
+          <div className="ai-feature">
+            <h3>24/7 Medical Support</h3>
+            <p>Get answers to your medical questions anytime</p>
+          </div>
+          <div className="ai-feature">
+            <h3>Personalized Advice</h3>
+            <p>Receive tailored medical information</p>
+          </div>
+          <div className="ai-feature">
+            <h3>Health Tracking</h3>
+            <p>Monitor your health progress</p>
+          </div>
+        </div>
+        <div className="chat-interface">
+          <div className="chat-messages">
+            <p>Start a conversation with our AI assistant</p>
+          </div>
+          <div className="chat-input">
+            <input type="text" placeholder="Type your question here..." />
+            <button>Send</button>
+          </div>
         </div>
       </div>
     </section>
